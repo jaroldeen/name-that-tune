@@ -1,5 +1,7 @@
 {
   "name": "name-that-tune",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "tone": "^0.11.11"
+  }
 }
