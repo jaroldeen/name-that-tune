@@ -21,5 +21,8 @@ Turbolinks.start();
 
 import 'bootstrap'
 
+import Tone from 'tone'
+global.Tone = Tone;
+
 require.context('../stylesheets/', true, /^\.\/[^_].*\.(css|scss|sass)$/i);
-require.context('../images/', true, /\.(gif|jpg|png|svg)$/i)
+require.context('../images/', true, /\.(gif|jpg|png|svg)$/i);
