@@ -11,9 +11,12 @@ RSpec.describe Tune, type: :model do
 
       it 'returns an array of Note objects having the expected pitches and durations' do
         expect(subject.notes.size).to eq(3)
+        expect(subject.notes).to all be_a(Note)
+
         first_note = subject.notes.first
-        second_note = subject.notes.first
-        third_note = subject.notes.first
+        second_note = subject.notes.second
+        third_note = subject.notes.third
+
         expect(first_note.duration).to eq('8n')
         expect(first_note.pitch).to eq('C5')
         expect(second_note.duration).to eq('8n')
